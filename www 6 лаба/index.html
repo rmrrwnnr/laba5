@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Сайтик</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="menu">
+                <p1>Company</p1>
+                <img src="img/Search.png" alt="search" class="search">
+                <p>Portfopo</p>
+                <p>Team</p>
+                <p>About</p>
+                <p>Blog</p>
+                <p>Contact</p>
+            </div>
+            <div class="general">
+                <h>We produce the best products</h>
+                <p>Mattis quam, lectus et justo amet, tortor, lectus dapibus est. Habitasse efficitur sodales vel est.</p>
+                <button type="button" class="btn btn-outline-light btn-lg btn-font-family" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Оставить заявку
+                </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content light-theme">
+                            <div class="modal-header">
+                                <h5 class="modal-title" style="font-size: 20px;" id="exampleModalLabel">Оставить заявку</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="main.php" method="post">
+                                    <div class="md-3">
+                                        <label for="validationCustomUsername" class="form-label">Как к вам обращаться?</label>
+                                        <div class="input-group has-validation">
+                                        <input type="text" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё]{,25}" class="form-control" id="validationCustomUsername" name="CustomUsername" aria-describedby="inputGroupPrepend" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                    <label for="exampleInputphonenumber" class="form-label">Введите Ваш номер телефона:</label>
+                                    <input type="tel" placeholder="Ваш телефон" class="form-control" pattern="[0-9]{11,}" data-format="+7 (ddd) ddd-dd-dd" class="form-control" id="exampleInputphonenumber" name="phonenumber" aria-describedby="emailHelp" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary" id="done">Оставить заявку</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="closed">Закрыть</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- <button type="button" onclick="knopka('privet')" class="btn btn-outline-light btn-lg btn-font-family" style="margin-left: 20px;">click</button>
+                    <div class="elemetlab5"><p id="privet">Привет!</p></div> -->
+                    <input type="file" id="imageInput" class="btn btn-outline-light btn-font-family" style="margin-left: 20px;">
+                    <button type="button" class="btn btn-outline-light btn-font-family"  id="addImageContentButton" style="margin-left: 50px;">Добавить изображение</button>
+                    <button type="button" class="btn btn-outline-light btn-font-family"  id="removeImageContentButton" >Удалить изображение</button>
+            </div>
+        </div>
+    </header>
+    <section class="section">
+        <div class="text1sect">
+            <p>20,000</p>
+            <p1>completed projects</p1>
+            <p>10,000</p>
+            <p1>prototypes</p1>
+            <p>347</p>
+            <p1>completed projects</p1>
+        </div>
+        <div class="text2sect">
+            <p1>Amet, mattis dapibus malesuada arcu dapibus nec efficitur et dictum. In sit odio. Tempus leo, dictum. </p1>
+            <p>Amet, mattis dapibus malesuada arcu dapibus nec efficitur et dictum. In sit odio. Tempus leo, dictum. Sit mattis mattis lorem cursus velit sit sed et vitae quam, sed nulla dapibus venenatis odio.</p>
+            <p>Venenatis sapien aenean adipiscing lacinia nec lacinia lacinia et quam, ultricies. Dictum. Ipsum sodales sit id nec sed sodales mattis mollis quis, pellentesque habitasse ex.</p>
+        </div>
+    </section>
+    <section class="section1">
+        <img style="width: 1100px;height: 630px; margin-left: 200px; margin-bottom: -700px; left: 200px; right: 200px;" src="img/videoimg.jpg" alt="photoplay">
+        <section class="imgtext">
+            <div class="imgtext1">
+                <p1>Et odio</p1>
+                <p>Mauris eget nec nulla dolor ex. Sodales luctus pellentesque cras ornare lorem luctus lectus sed consectetur quam, est. Libero, odi</p>
+                <p2>Button</p2>
+            </div>
+            <img style="width: 520px;height: 350px;position: absolute; right: 176px;" src="img/section1img.jpg" alt="picture1" class="img1t">
+        </section>
+        <section class="imgtext2">
+            <img style="width: 520px; height: 350px;margin-left: 200px; margin-top: 200px;" src="img/section2img.jpg" alt="picture2">
+            <div class="imgtext3">
+                <p1>Integer dapibus dictum</p1>
+                <p>it pulvinar tempus amet dolor dui vulputate tortor, luctus lorem in nunc eleifend ipsum justo et venenatis dictumst.</p>
+                <p2>Button</p2>
+            </div>
+        </section >
+            <section class="justtext">
+                <div class="justtext1">
+                    <p1 style="font-size: 16px;color: #838383;">Quoute</p1>
+                    <p style="font-weight: 500;font-size: 36px;margin-top: 50px;width: 820px;margin-bottom: 30px;">Accumsan vulputate efficitur in amet, vestibulum ornare morbi accumsan leo, est. Consectetur ultricies. Sapien est. Dictumst. Sapien habitasse interdum in amet, lectus molestie vel ut. Malesuada efficitur mattis id mattis aenean interdum lectus quam, dapibus nec augue vulputate leo, ornare elit.</p>
+                    <p2 style="font-size: 16px;">Alex Lee /</p2>
+                    <p3 style="font-size: 16px;color: #838383;"> Co-founder & SEO</p3>
+                </div>
+            </section>
+        <img style="width: 100%; height: auto; margin-top: 200px;" src="img/section3img.jpg" alt="pict" class="justpic">
+        <section class="footer0">
+            <div class="fot0text">
+                <hr style="margin-top: 190px;width: 1200px;margin-bottom: 40px;">
+                <div class="nav">
+                    <p>Branding</p>
+                    <p1>Quam, tortor, interdum consectetur eleifend integer et. Accumsan vulputate efficitur in amet, vestibulum ornare morbi accumsan leo, est. Consectetur ultricies.</p1>
+                </div>
+                <hr style="margin-top: 190px;width: 1200px;margin-top: 40px;">
+                <div class="nav">
+                    <p>Web-apps</p>
+                    <p1>Malesuada efficitur mattis id mattis aenean interdum lectus quam, dapibus nec augue vulputate leo, ornare elit. Pulvinar sed quam, arcu pulvinar nisi ipsum quis, sodales molestie ex.</p1>
+                </div>  
+                <hr style="margin-top: 190px;width: 1200px;margin-top: 40px;">
+                <div class="nav">
+                    <p>Design</p>
+                    <p1>Cras amet, sed sapien orci, leo, sit ornare risus tortor, ex. Mauris non orci, sed elit. Cursus ex. Aenean ipsum dolor augue tempus et molestie ipsum adipiscing leo, sit interdum venenatis odio.</p1>
+                </div>
+                <hr style="margin-top: 190px;width: 1200px;margin-top: 40px;">
+                <div class="nav">
+                    <p>Strategy</p>
+                    <p1>Quam, tortor, interdum consectetur eleifend integer et. Accumsan vulputate efficitur in amet, vestibulum ornare morbi accumsan leo, est. Consectetur ultricies.</p1>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+    <footer class="footer">
+        <div class="footertext">
+            <p>Company</p>
+            <p1>Dorivit BV, Monitorweg 1, Almere 1322BJ, Netherlands</p1>
+        </div>
+        <div class="socialmedia">
+            <img src="img/fb.png" alt="facebook">
+            <img src="img/tg.png" alt="tg">
+            <img src="img/google.png" alt="google">
+        </div>
+        <div class="emailetc">
+            <p>Id sodales interdum dui mollis non in odio</p>
+            <p1>E-MAIL</p1>
+            <p2 style="color: #fff;"></p2>
+            <hr align="left" size="1" style="color: #838383; width: 540px;margin-top: 20px;">
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
